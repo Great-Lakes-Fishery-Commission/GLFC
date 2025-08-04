@@ -13,7 +13,7 @@ An example of how to use the functions in **GLFC** to estimate larval sea lampre
 You can access the functions by installing the package from within R.
 
     install.packages("remotes")
-    remotes::install_github("JVAdams/GLFC")
+    remotes::install_github("Great-Lakes-Fishery-Commission/GLFC")
     library(GLFC)
 
 - - -
