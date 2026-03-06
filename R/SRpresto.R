@@ -714,7 +714,7 @@ SRpresto <- function(FOLDER, INDEX.LAKE, INDEX.STREAM, MAXLARVAE,
   			}
       targphrase <- paste0("the mean of indices during a period with",
         " acceptable marking rates (")
-      if(i==2) targphrase <- c("5/8.9 times the mean of indices (")
+      #if(i==2) targphrase <- c("5/8.9 times the mean of indices (")
       if(i==3) targphrase <- c("0.25 times the mean of indices (")
   		figu("Index estimates with 95% confidence intervals (vertical bars) of adult sea lampreys, including historic pre-control abundance (as a population estimate) and the three-year moving average (line). The population estimate scale (right vertical axis) is based on the index-to-PE conversion factor of ", index2pe[i], ". The adult index in ", indexsmry$spawner.year[i], " was ", indexsmry$findex[i], " with 95% confidence interval (", indexsmry$findex.lo[i], "-", indexsmry$findex.hi[i], "). The three-year (", indexsmry$yrz[i], ") average of ", indexsmry$fmean3[i], c(" met", " was above")[(indexsmry$fmean3[i] > indexsmry$ftarget[i]) + 1], " the target of ", indexsmry$ftarget[i], ".", " The index target was estimated as ", targphrase, targyrz[i], ").",
   		  FIG=fig, h=2.64, w=3.96)
